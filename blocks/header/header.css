@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--nav-background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -19,6 +19,7 @@ header nav {
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
+  color: var(--nav-color);
 }
 
 header nav[aria-expanded="true"] {
@@ -71,7 +72,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: var(--nav-background-color);
   color: inherit;
   overflow: initial;
   text-overflow: initial;
@@ -248,7 +249,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
+    background-color: var(--nav-subnav-background-color);
     white-space: initial;
   }
 
@@ -261,7 +262,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
+    border-bottom: 8px solid var(--nav-subnav-background-color);
   }
 
   header nav .nav-sections > ul > li > ul > li {
@@ -272,4 +273,8 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+#icons-sprite-search {
+  fill: var(--nav-color);
 }
